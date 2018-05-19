@@ -1,0 +1,12 @@
+<div>
+  <div [hidden]="label === ''">
+    <label>{{label}}</label>
+  </div>
+  <div>
+    <input [attr.type]="type"
+           [attr.placeholder]="placeholder"
+           [(ngModel)]="model"
+           (change)="handleOnChange($event)"
+           (click)="handleOnClick($event)" />
+  </div>
+</div>

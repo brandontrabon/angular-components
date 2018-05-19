@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  onClick($event: MouseEvent) {
+    console.log('clicked ', $event);
+  }
+
+  onChange($event: any) {
+    console.log('onChanged ', $event.target.value);
+  }
 }
